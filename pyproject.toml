@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "umi-audit"
+version = "0.1.0"
+description = "Quality-control audit of the UMI gripper fiducial-marker video dataset"
+requires-python = ">=3.9"
+dependencies = [
+  "opencv-contrib-python>=4.8", "numpy", "pandas", "matplotlib",
+  "imagehash", "pillow", "tabulate",
+]
+
+[project.scripts]
+umi-audit = "umi_audit.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

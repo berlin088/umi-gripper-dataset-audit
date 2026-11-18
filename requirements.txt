@@ -1,0 +1,8 @@
+opencv-contrib-python>=4.8
+numpy
+pandas
+matplotlib
+imagehash
+pillow
+tabulate
+pytest

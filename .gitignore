@@ -1,0 +1,19 @@
+# data and results (never commit videos)
+data/raw/*
+!data/raw/.gitkeep
+outputs/*
+!outputs/.gitkeep
+*.mp4
+*.mov
+*.mkv
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+# editor / OS
+.vscode/
+.DS_Store
